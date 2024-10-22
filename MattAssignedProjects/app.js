@@ -12,6 +12,16 @@ function thisIsTheInternet(str) {
             console.log("top char:",str.charAt(i).toUpperCase()); 
             console.log("r:", r); 
         }
+        else if(str.charAt(i) === '.') {
+            for (let i = 0; i < Math.floor(Math.random() * 2)+1; i++) {
+                r = r + "!"; 
+            }
+        }
+        else if(str.charAt(i) === '?') {
+            for (let i = 0; i < Math.floor(Math.random() * 2)+1; i++) {
+                r = r + "!"; 
+            }
+        }
         else {
             r = r + str.charAt(i);
             console.log("bot char:", str.charAt(i)); 
@@ -22,5 +32,5 @@ function thisIsTheInternet(str) {
     
 }
 
-thisIsTheInternet("Hiiiiiiiiiii");
+thisIsTheInternet("Hello internet. This is my test. Why are you like this?");
 // how to assign a char to specific point in string
